@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Get in touch with Sofia Vicinanza — Event & Marketing Specialist based in Barcelona, open to opportunities across Europe.">
+<title>Contact — Sofia Vicinanza</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site">
+
+  <nav>
+    <a href="index.html" class="nav-logo">Sofia Vicinanza</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html" class="active nav-cta">Get In Touch</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <div class="hero-tag">Contact</div>
+    <h1>Let's work together</h1>
+    <p>Whether you're looking for an event manager, a marketing specialist, or someone to handle both — I'd love to hear about your project.</p>
+  </div>
+
+  <section class="section">
+    <div class="availability-badge">
+      <div class="availability-dot"></div>
+      Available for new projects
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="section-label" style="margin-bottom: 24px;">Send a message</div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary-light" style="align-self: flex-start;">Send Message</button>
+          <div id="form-success" style="display:none; font-size: 13px; color: var(--accent); padding: 12px; background: var(--accent-light); border-radius: 8px;">Thank you! I'll get back to you as soon as possible.</div>
+        </form>
+      </div>
+      <div>
+        <div class="section-label" style="margin-bottom: 24px;">Get in touch directly</div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value"><a href="mailto:sofia.vicinanza@gmail.com">sofia.vicinanza@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">LinkedIn</div>
+            <div class="contact-item-value"><a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener">linkedin.com/in/sofia-vicinanza</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Based in</div>
+            <div class="contact-item-value">Barcelona, Spain</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Open to</div>
+            <div class="contact-item-value">Remote · In-person · Europe-wide</div>
+          </div>
+          <div style="margin-top: 8px; padding: 20px; background: var(--off-white); border-radius: 12px; border: 0.5px solid var(--border);">
+            <div style="font-size: 12px; font-weight: 500; color: var(--text-secondary); margin-bottom: 8px;">What I can help with</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 6px;">
+              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Full event management & coordination</li>
+              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Event marketing & branding</li>
+              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Tour & travel event management</li>
+              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Membership & community management</li>
+              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Vendor & logistics coordination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-name">© 2025 Sofia Vicinanza · Barcelona, Spain</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:sofia.vicinanza@gmail.com">sofia.vicinanza@gmail.com</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="cookies.html">Cookie Policy</a>
+    </div>
+  </footer>
+
+</div>
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('form-success').style.display = 'block';
+  e.target.reset();
+}
+</script>
+</body>
+</html>
