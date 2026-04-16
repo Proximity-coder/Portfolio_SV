@@ -59,7 +59,7 @@ nav {
 
 .nav-hamburger { display: none; }
 
-
+.nav-logo::after {
   content: '';
   display: inline-block;
   width: 6px;
