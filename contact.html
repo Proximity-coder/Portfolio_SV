@@ -114,8 +114,10 @@
 </div>
 <script>
 function toggleMenu() {
-  document.getElementById("nav-links").classList.toggle("open");
-  document.getElementById("hamburger").classList.toggle("open");
+  var links = document.getElementById("nav-links");
+  var burger = document.getElementById("hamburger");
+  if (links) links.classList.toggle("open");
+  if (burger) burger.classList.toggle("open");
 }
 document.addEventListener("click", function(e) {
   if (!e.target.closest("nav")) {

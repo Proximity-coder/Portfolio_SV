@@ -667,46 +667,162 @@ footer {
 .legal-content a { color: var(--accent); }
 
 @media (max-width: 768px) {
-  nav { padding: 0 20px; position: relative; }
-  .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 8px 0; z-index: 200; border-top: 0.5px solid rgba(255,255,255,0.08); }
-  .nav-links.open { display: flex; }
-  .nav-links li { width: 100%; }
-  .nav-links a { display: block; padding: 14px 20px; font-size: 14px; color: rgba(255,255,255,0.6); border-bottom: 0.5px solid rgba(255,255,255,0.06); }
-  .nav-links a:hover, .nav-links a.active { color: var(--accent); }
-  .nav-cta { background: none !important; border: none !important; color: var(--accent) !important; }
-  .nav-hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
-  .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: rgba(255,255,255,0.7); transition: all 0.2s; border-radius: 2px; }
+  nav {
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .nav-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    background: none;
+    border: none;
+    z-index: 201;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 1.5px;
+    background: rgba(255,255,255,0.75);
+    transition: all 0.25s;
+    border-radius: 2px;
+  }
+
   .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
   .nav-hamburger.open span:nth-child(2) { opacity: 0; }
   .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
-  .hero { grid-template-columns: 1fr !important; padding: 0 !important; min-height: 100vh !important; position: relative; }
-  .hero > div:first-child { padding: 80px 24px 48px; position: relative; z-index: 2; }
-  .hero > div:last-child { position: absolute !important; inset: 0; min-height: auto !important; }
-  .hero > div:last-child img { opacity: 0.2; }
-  .hero > div:last-child > div { display: none; }
-  .hero h1 { font-size: 32px; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    z-index: 200;
+    border-top: 0.5px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links li { width: 100%; }
+
+  .nav-links a {
+    display: block;
+    padding: 16px 20px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    border-bottom: 0.5px solid rgba(255,255,255,0.06);
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active { color: var(--accent); }
+
+  .nav-cta {
+    background: none !important;
+    border: none !important;
+    color: var(--accent) !important;
+    padding: 16px 20px !important;
+    border-radius: 0 !important;
+  }
+
+  .hero {
+    grid-template-columns: 1fr !important;
+    min-height: 100vh !important;
+    padding: 0 !important;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero > div:first-child {
+    padding: 80px 24px 48px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero > div:last-child {
+    position: absolute !important;
+    inset: 0;
+    min-height: auto !important;
+  }
+
+  .hero > div:last-child img { opacity: 0.15; }
+  .hero > div:last-child > div { display: none !important; }
+
+  .hero h1 { font-size: 30px; }
   .hero-sub { font-size: 14px; }
-
-  .page-hero { grid-template-columns: 1fr !important; padding: 64px 24px 48px !important; min-height: auto !important; gap: 32px !important; }
-  .page-hero > div:last-child { display: flex; justify-content: center; }
-  .page-hero > div:last-child > div { width: 140px !important; height: 140px !important; }
-  .page-hero h1 { font-size: 28px; }
-
-  .stats-bar { grid-template-columns: 1fr; }
-  .stat-item { border-right: none; border-bottom: 0.5px solid rgba(255,255,255,0.06); padding: 20px 24px; }
-  .section { padding: 40px 20px; }
-  .two-col, .three-col, .four-col, .resp-grid, .contact-grid { grid-template-columns: 1fr; }
-  .timeline-item { grid-template-columns: 1fr; gap: 4px; }
-  .timeline-date { padding-top: 0; }
-  .page-hero { padding: 40px 20px; }
-  footer { padding: 20px; flex-direction: column; gap: 8px; }
-  footer .footer-links { flex-wrap: wrap; gap: 12px; }
-  .cta-section { padding: 48px 20px; }
-  .next-project { padding: 24px 20px; }
-  .meta-row { gap: 20px; }
-  .highlight-card { padding: 20px; }
-  .resp-grid { grid-template-columns: 1fr; }
   .hero-btns { flex-direction: column; gap: 10px; }
   .hero-btns a { text-align: center; }
+
+  .page-hero {
+    grid-template-columns: 1fr !important;
+    padding: 64px 24px 48px !important;
+    min-height: auto !important;
+    gap: 28px !important;
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+
+  .page-hero > div:last-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-hero > div:last-child > div {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .page-hero h1 { font-size: 26px; }
+  .page-hero p { font-size: 14px; }
+
+  .stats-bar { grid-template-columns: 1fr; }
+  .stat-item {
+    border-right: none;
+    border-bottom: 0.5px solid rgba(255,255,255,0.06);
+    padding: 20px 24px;
+  }
+
+  .section { padding: 40px 20px; }
+  .two-col,
+  .three-col,
+  .four-col,
+  .resp-grid,
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .timeline-date { padding-top: 0; }
+
+  .meta-row { gap: 16px; }
+
+  footer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-links { flex-wrap: wrap; gap: 12px; }
+
+  .cta-section { padding: 48px 20px; }
+  .cta-btns { flex-direction: column; gap: 10px; align-items: center; }
+
+  .next-project { padding: 24px 20px; }
+
+  .highlight-card { padding: 20px; }
+
+  .type-pills { gap: 8px; }
+  .type-pill { font-size: 11px; padding: 6px 12px; }
 }

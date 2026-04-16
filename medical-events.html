@@ -132,5 +132,21 @@
   </footer>
 
 </div>
+<script>
+function toggleMenu() {
+  var links = document.getElementById('nav-links');
+  var burger = document.getElementById('hamburger');
+  if (links) links.classList.toggle('open');
+  if (burger) burger.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('nav')) {
+    var links = document.getElementById('nav-links');
+    var burger = document.getElementById('hamburger');
+    if (links) links.classList.remove('open');
+    if (burger) burger.classList.remove('open');
+  }
+});
+</script>
 </body>
 </html>
