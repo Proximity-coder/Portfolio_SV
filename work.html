@@ -20,10 +20,17 @@
     </ul>
   </nav>
 
-  <div class="page-hero">
-    <div class="hero-tag">Portfolio</div>
-    <h1>Selected work</h1>
-    <p>A selection of projects spanning EMEA medical event management and international sports tourism. Each project represents a different challenge — and a different set of skills brought to bear.</p>
+  <div class="page-hero" style="display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 64px; padding: 80px 48px;">
+    <div>
+      <div class="hero-tag">Portfolio</div>
+      <h1>Selected work</h1>
+      <p>A selection of projects spanning EMEA medical event management and international sports tourism. Each project represents a different challenge — and a different set of skills brought to bear.</p>
+    </div>
+    <div style="flex-shrink: 0;">
+      <div style="width: 220px; height: 220px; border-radius: 50%; overflow: hidden; border: 3px solid #28a99e;">
+        <img src="img-at-work.jpg" alt="Sofia Vicinanza at work" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+      </div>
+    </div>
   </div>
 
   <section class="section">
@@ -31,8 +38,8 @@
 
       <a href="blpa.html" style="text-decoration:none;">
         <div style="border: 0.5px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.2s, transform 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
-          <div style="background: #eeedf8; height: 200px; display: flex; align-items: center; justify-content: center;">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#7F77DD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg>
+          <div style="background: #eeedf8; height: 200px; overflow: hidden;">
+            <img src="img-hockey.jpg" alt="BLPA Hockey Tour" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
           </div>
           <div style="padding: 28px;">
             <div style="font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px;">Sports & Travel · Freelance · Ongoing</div>
@@ -50,8 +57,8 @@
 
       <a href="medical-events.html" style="text-decoration:none;">
         <div style="border: 0.5px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.2s, transform 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
-          <div style="background: var(--accent-light); height: 200px; display: flex; align-items: center; justify-content: center;">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#28a99e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <div style="background: var(--accent-light); height: 200px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop" alt="Conference audience" style="width: 100%; height: 130%; object-fit: cover; object-position: center 30%;">
           </div>
           <div style="padding: 28px;">
             <div style="font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px;">Professional Events · 2024–2026</div>
@@ -74,7 +81,7 @@
     <div class="footer-name">© 2025 Sofia Vicinanza · Barcelona, Spain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:sofia.vicinanza@gmail.com">sofia.vicinanza@gmail.com</a>
+      <a href="mailto:info@sofiavicinanza.com">info@sofiavicinanza.com</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="cookies.html">Cookie Policy</a>
     </div>

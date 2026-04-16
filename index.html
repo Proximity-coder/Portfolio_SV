@@ -25,23 +25,35 @@
     </ul>
   </nav>
 
-  <section class="hero" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
-    <div class="hero-tag">Event & Marketing Specialist · Barcelona</div>
-    <h1>Turning complex <em>events</em> into seamless experiences</h1>
-    <p class="hero-sub">From international sports tours across Europe and Asia to EMEA medical congresses — I manage the full lifecycle of events with precision, strategy and hands-on delivery.</p>
-    <div class="hero-btns">
-      <a href="work.html" class="btn-primary">View My Work</a>
-      <a href="contact.html" class="btn-outline">Get In Touch</a>
+  <section class="hero" style="min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; padding: 0;">
+    <div style="padding: 80px 48px; display: flex; flex-direction: column; justify-content: center;">
+      <div class="hero-tag">Freelance Consultant · Barcelona</div>
+      <h1>Turning complex <em>events</em> into seamless experiences</h1>
+      <p class="hero-sub">From international sports tours across Europe and Asia to EMEA medical congresses — I manage the full lifecycle of events with precision, strategy and hands-on delivery.</p>
+      <div class="hero-btns">
+        <a href="work.html" class="btn-primary">View My Work</a>
+        <a href="contact.html" class="btn-outline">Get In Touch</a>
+      </div>
+      <div style="margin-top: 64px; display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.25); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;">
+        <span>Scroll</span>
+        <div style="width: 32px; height: 0.5px; background: rgba(255,255,255,0.25);"></div>
+      </div>
+    </div>
+    <div style="position: relative; overflow: hidden; min-height: 100vh;">
+      <img src="img-at-work.jpg" alt="Sofia Vicinanza at work during an event" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(to right, #0e1628 0%, rgba(14,22,40,0.3) 100%);"></div>
     </div>
   </section>
 
   <section class="section">
-    <div class="section-label">About</div>
-    <h2>Driven by complexity,<br>delivered with precision</h2>
-    <p>I specialize in the full lifecycle of professional events — from early planning and logistics to onsite delivery and post-event reporting. I work across two sectors: EMEA medical and scientific events, and international sports tourism with the Beer League Players Association.</p>
-    <p>I thrive in fast-paced, small-team environments where ownership and initiative make the real difference.</p>
-    <div style="margin-top: 28px;">
-      <a href="about.html" class="btn-primary-light">More About Me</a>
+    <div style="max-width: 640px;">
+      <div class="section-label">About</div>
+      <h2>Driven by complexity,<br>delivered with precision</h2>
+      <p>I specialize in the full lifecycle of professional events — from early planning and logistics to onsite delivery and post-event reporting. I work across two sectors: EMEA medical and scientific events, and international sports tourism with the Beer League Players Association.</p>
+      <p>I thrive in fast-paced, small-team environments where ownership and initiative make the real difference.</p>
+      <div style="margin-top: 28px;">
+        <a href="about.html" class="btn-primary-light">More About Me</a>
+      </div>
     </div>
   </section>
 
@@ -50,8 +62,7 @@
     <h2>Selected work</h2>
     <div class="three-col" style="margin-top: 32px;">
       <a href="blpa.html" class="card">
-        <div class="card-img sport">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+        <div class="card-img sport" style="background-image: url('img-hockey.jpg'); background-size: cover; background-position: center; height: 160px;">
         </div>
         <div class="card-body">
           <div class="card-tag">Sports & Travel · Freelance · Ongoing</div>
@@ -61,8 +72,7 @@
         </div>
       </a>
       <a href="medical-events.html" class="card">
-        <div class="card-img medical">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#28a99e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <div class="card-img medical" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop'); background-size: cover; background-position: center; height: 160px;">
         </div>
         <div class="card-body">
           <div class="card-tag">Professional Events · 2024–2026</div>
@@ -114,7 +124,7 @@
     <div class="footer-name">© 2025 Sofia Vicinanza · Barcelona, Spain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:sofia.vicinanza@gmail.com">sofia.vicinanza@gmail.com</a>
+      <a href="mailto:info@sofiavicinanza.com">info@sofiavicinanza.com</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="cookies.html">Cookie Policy</a>
     </div>
