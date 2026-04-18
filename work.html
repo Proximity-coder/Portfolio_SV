@@ -5,13 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Sofia Vicinanza's portfolio — EMEA medical event management and BLPA Worldwide Hockey Tours. Event & Marketing Specialist based in Barcelona.">
 <title>Work — Sofia Vicinanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="aurora"></div>
+<div class="stars"></div>
+<div class="noise"></div>
+
 <div class="site">
 
   <nav>
-    <a href="index.html" class="nav-logo">Sofia Vicinanza</a>
+    <a href="index.html" class="nav-logo">Sofia<i>.</i>Vicinanza</a>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -21,89 +29,65 @@
     <button class="nav-hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </nav>
 
-  <div class="page-hero" style="display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 64px; padding: 80px 48px;">
-    <div>
-      <div class="hero-tag">Portfolio</div>
-      <h1>Selected work</h1>
-      <p>A selection of projects spanning EMEA medical event management and international sports tourism. Each project represents a different challenge — and a different set of skills brought to bear.</p>
-    </div>
-    <div style="flex-shrink: 0;">
-      <div style="width: 220px; height: 220px; border-radius: 50%; overflow: hidden; border: 3px solid #28a99e;">
-        <img src="img-at-work.jpg" alt="Sofia Vicinanza at work" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
-      </div>
-    </div>
+  <div class="page-hero">
+    <div class="hero-tag">Portfolio</div>
+    <h1>Selected <em>work.</em></h1>
+    <p class="lead">A selection of projects spanning EMEA medical event management and international sports tourism. Each represents a different challenge — and a different set of skills brought to bear.</p>
   </div>
 
   <section class="section">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+    <div class="project-grid">
 
-      <a href="blpa.html" style="text-decoration:none;">
-        <div style="border: 0.5px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.2s, transform 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
-          <div style="background: #eeedf8; height: 200px; overflow: hidden;">
-            <img src="img-hockey.jpg" alt="BLPA Hockey Tour" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-          </div>
-          <div style="padding: 28px;">
-            <div style="font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px;">Sports & Travel · Freelance · Ongoing</div>
-            <h3 style="font-family: var(--font-display); font-size: 24px; font-weight: 400; color: var(--text-primary); margin-bottom: 10px; line-height: 1.2;">BLPA Worldwide Hockey Tours</h3>
-            <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">Freelance consultant for sport events & marketing for the Beer League Players Association — approximately 12 worldwide hockey tours per year across destinations in Europe and Asia.</p>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
-              <span style="font-size: 11px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text-muted);">Tour Management</span>
-              <span style="font-size: 11px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text-muted);">Sports Tourism</span>
-              <span style="font-size: 11px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text-muted);">Branding</span>
-            </div>
-            <div style="font-size: 13px; color: var(--accent); display: flex; align-items: center; gap: 4px;">Read case study →</div>
+      <a href="blpa.html" class="card project-card glow-a">
+        <div>
+          <div class="card-tag">Sports &amp; Travel · Freelance · Ongoing</div>
+          <h3 class="project-title">BLPA Worldwide Hockey Tours</h3>
+          <p class="project-desc">Freelance consultant for sport events &amp; marketing for the Beer League Players Association — approximately 12 worldwide hockey tours per year across destinations in Europe and Asia.</p>
+          <div class="pill-row">
+            <span class="pill">Tour Management</span>
+            <span class="pill">Sports Tourism</span>
+            <span class="pill">Branding</span>
           </div>
         </div>
+        <div class="project-link">Read case study →</div>
       </a>
 
-      <a href="medical-events.html" style="text-decoration:none;">
-        <div style="border: 0.5px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.2s, transform 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
-          <div style="background: var(--accent-light); height: 200px; overflow: hidden;">
-            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop" alt="Conference audience" style="width: 100%; height: 130%; object-fit: cover; object-position: center 30%;">
-          </div>
-          <div style="padding: 28px;">
-            <div style="font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px;">Professional Events · 2024–2026</div>
-            <h3 style="font-family: var(--font-display); font-size: 24px; font-weight: 400; color: var(--text-primary); margin-bottom: 10px; line-height: 1.2;">Professional Events — Congresses</h3>
-            <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">Two years managing 22+ medical and scientific events per year across the EMEA region — from intimate one-day CME courses to multi-day international congresses.</p>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
-              <span style="font-size: 11px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text-muted);">International Congresses</span>
-              <span style="font-size: 11px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text-muted);">CME Courses</span>
-              <span style="font-size: 11px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text-muted);">Hybrid Meetings</span>
-            </div>
-            <div style="font-size: 13px; color: var(--accent); display: flex; align-items: center; gap: 4px;">View experience →</div>
+      <a href="medical-events.html" class="card project-card glow-c">
+        <div>
+          <div class="card-tag">Professional Events · 2024–2026</div>
+          <h3 class="project-title">Professional Events — Congresses</h3>
+          <p class="project-desc">Two years managing 22+ medical and scientific events per year across the EMEA region — from intimate one-day CME courses to multi-day international congresses.</p>
+          <div class="pill-row">
+            <span class="pill">International Congresses</span>
+            <span class="pill">CME Courses</span>
+            <span class="pill">Hybrid Meetings</span>
           </div>
         </div>
+        <div class="project-link">View experience →</div>
       </a>
 
     </div>
   </section>
 
+  <div class="cta-section">
+    <h2>More projects <em>coming soon.</em></h2>
+    <p>If you'd like to discuss a potential collaboration, I'd love to hear from you.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn-primary">Get In Touch →</a>
+    </div>
+  </div>
+
   <footer>
-    <div class="footer-name">© 2025 Sofia Vicinanza · Barcelona, Spain</div>
+    <div class="footer-name">© 2026 Sofia Vicinanza · Barcelona, Spain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:info@sofiavicinanza.com">info@sofiavicinanza.com</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="cookies.html">Cookie Policy</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookies.html">Cookies</a>
     </div>
   </footer>
 
 </div>
-<script>
-function toggleMenu() {
-  var links = document.getElementById('nav-links');
-  var burger = document.getElementById('hamburger');
-  if (links) links.classList.toggle('open');
-  if (burger) burger.classList.toggle('open');
-}
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('nav')) {
-    var links = document.getElementById('nav-links');
-    var burger = document.getElementById('hamburger');
-    if (links) links.classList.remove('open');
-    if (burger) burger.classList.remove('open');
-  }
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>

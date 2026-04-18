@@ -5,13 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="About Sofia Vicinanza — Event & Marketing Specialist with experience in EMEA medical events and international sports tourism. Based in Barcelona.">
 <title>About — Sofia Vicinanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="aurora"></div>
+<div class="stars"></div>
+<div class="noise"></div>
+
 <div class="site">
 
   <nav>
-    <a href="index.html" class="nav-logo">Sofia Vicinanza</a>
+    <a href="index.html" class="nav-logo">Sofia<i>.</i>Vicinanza</a>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
@@ -21,29 +29,22 @@
     <button class="nav-hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </nav>
 
-  <div class="page-hero" style="display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 64px; padding: 80px 48px;">
-    <div>
-      <div class="hero-tag">About me</div>
-      <h1>Driven, creatively</h1>
-      <p>As an Event & Marketing Specialist I bring passion, initiative and a collaborative mindset to every project — from planning international medical congresses to designing worldwide sports tours. I'm always working towards increasingly innovative and effective solutions.</p>
-    </div>
-    <div style="flex-shrink: 0;">
-      <div style="width: 220px; height: 220px; border-radius: 50%; overflow: hidden; border: 3px solid #28a99e;">
-        <img src="img-portrait.jpg" alt="Sofia Vicinanza" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
-      </div>
-    </div>
+  <div class="page-hero">
+    <div class="hero-tag">About me</div>
+    <h1>Driven, <em>creatively.</em></h1>
+    <p class="lead">As an Event &amp; Marketing Specialist I bring passion, initiative and a collaborative mindset to every project — from planning international medical congresses to designing worldwide sports tours. I'm always working towards increasingly innovative and effective solutions.</p>
   </div>
 
   <section class="section">
     <div class="section-label">Skills</div>
-    <div class="four-col" style="margin-top: 8px;">
+    <div class="four-col">
       <div class="skill-group">
         <h3>Hard skills</h3>
         <ul>
           <li>Project Management</li>
           <li>Event Logistics</li>
-          <li>Marketing & Promotion</li>
-          <li>Membership & CRM</li>
+          <li>Marketing &amp; Promotion</li>
+          <li>Membership &amp; CRM</li>
           <li>Vendor Negotiation</li>
           <li>Budget Management</li>
           <li>Data Analysis</li>
@@ -83,33 +84,35 @@
     </div>
   </section>
 
-  <section class="section" style="background: var(--off-white);">
+  <section class="section">
     <div class="section-label">Experience</div>
+
     <div class="timeline-item">
       <div class="timeline-date">
         <span class="timeline-period">2026 — ongoing</span>
         <span class="timeline-type">Freelance</span>
       </div>
       <div class="timeline-content">
-        <h3>Freelance Consultant — Sport Events & Marketing</h3>
+        <h3>Freelance Consultant — Sport Events &amp; Marketing</h3>
         <span class="timeline-company">Beer League Players Association · Worldwide</span>
         <p>Managing the full event and marketing strategy for the BLPA's Worldwide Hockey Tours — approximately 12 tours per year across destinations in Europe and Asia. Responsibilities span tour itinerary design, branding, participant communications and logistics coordination.</p>
       </div>
     </div>
-    <div class="timeline-item" style="margin-top: 0;">
+
+    <div class="timeline-item">
       <div class="timeline-date">
         <span class="timeline-period">2024 — 2026</span>
         <span class="timeline-type">Full-time</span>
       </div>
       <div class="timeline-content">
-        <h3>Event & Marketing Specialist</h3>
-        <span class="timeline-company">PCO & AMC Agency · Milan, Italy</span>
+        <h3>Event &amp; Marketing Specialist</h3>
+        <span class="timeline-company">PCO &amp; AMC Agency · Milan, Italy</span>
         <p>Working in a small team of three managing the complete lifecycle of 22+ events per year across the EMEA region. Within my first six months I was trusted with the full planning and delivery of a European-level event in Ljubljana. In 2025 alone I delivered 15 projects — ranging from one-day courses to three-day international conventions, both in-person and online.</p>
         <ul class="resp-list">
           <li>End-to-end project management of EMEA medical and scientific events</li>
           <li>Event design and pipeline workflow definition across all project stages</li>
-          <li>Logistics & stakeholder coordination for speakers, faculty, attendees and sponsors</li>
-          <li>Marketing & branding: graphic design, web development, email marketing, social media</li>
+          <li>Logistics &amp; stakeholder coordination for speakers, faculty, attendees and sponsors</li>
+          <li>Marketing &amp; branding: graphic design, web development, email marketing, social media</li>
           <li>Membership management and CRM for non-profit medical societies</li>
           <li>Onsite operations: registration, check-in, real-time problem solving</li>
           <li>Vendor relations, contract negotiation and purchase order processing</li>
@@ -121,77 +124,66 @@
 
   <section class="section">
     <div class="section-label">Volunteering</div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+    <div class="two-col">
       <div class="vol-card">
-        <span class="vol-badge je">Junior Enterprise</span>
-        <div class="role">Head of HR & Events</div>
-        <div class="org">JECoMM — Junior Enterprise Communication & Marketing</div>
+        <span class="vol-badge">Junior Enterprise</span>
+        <div class="role">Head of HR &amp; Events</div>
+        <div class="org">JECoMM — Junior Enterprise Communication &amp; Marketing</div>
         <div class="period">2023 — 2024</div>
         <p>Oversaw the full member lifecycle — recruitment, onboarding, training and team-building. As Executive Board member, aligned HR and Events strategy with association objectives.</p>
       </div>
       <div class="vol-card">
-        <span class="vol-badge je">Junior Enterprise</span>
-        <div class="role">Project Manager — Learning & Development</div>
-        <div class="org">JECoMM — Junior Enterprise Communication & Marketing</div>
+        <span class="vol-badge">Junior Enterprise</span>
+        <div class="role">Project Manager — Learning &amp; Development</div>
+        <div class="org">JECoMM — Junior Enterprise Communication &amp; Marketing</div>
         <div class="period">2022 — 2023</div>
-        <p>Led the L&D team in designing training sessions and workshops. Developed skills assessment methods and standardized the onboarding process to increase efficiency.</p>
+        <p>Led the L&amp;D team in designing training sessions and workshops. Developed skills assessment methods and standardized the onboarding process to increase efficiency.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background: var(--off-white);">
+  <section class="section">
     <div class="section-label">Education</div>
     <div class="timeline-item">
-      <div class="timeline-date"></div>
+      <div class="timeline-date">
+        <span class="timeline-period">Master's</span>
+      </div>
       <div class="timeline-content">
-        <h3>Master's Degree in Politics, Philosophy & Public Affairs (PPPA)</h3>
+        <h3>Politics, Philosophy &amp; Public Affairs (PPPA)</h3>
         <span class="timeline-company">Università degli Studi di Milano</span>
       </div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-date"></div>
+      <div class="timeline-date">
+        <span class="timeline-period">Bachelor's</span>
+      </div>
       <div class="timeline-content">
-        <h3>Bachelor's Degree in Philosophy</h3>
+        <h3>Philosophy</h3>
         <span class="timeline-company">Università degli Studi di Milano</span>
       </div>
     </div>
   </section>
 
   <div class="cta-section">
-    <h2>Interested in working together?</h2>
+    <h2>Interested in <em>working together?</em></h2>
     <p>I'm available for event management and marketing projects across Europe.</p>
     <div class="cta-btns">
-      <a href="contact.html" class="btn-primary">Get In Touch</a>
+      <a href="contact.html" class="btn-primary">Get In Touch →</a>
       <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener" class="btn-outline">Connect on LinkedIn</a>
     </div>
   </div>
 
   <footer>
-    <div class="footer-name">© 2025 Sofia Vicinanza · Barcelona, Spain</div>
+    <div class="footer-name">© 2026 Sofia Vicinanza · Barcelona, Spain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:info@sofiavicinanza.com">info@sofiavicinanza.com</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="cookies.html">Cookie Policy</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookies.html">Cookies</a>
     </div>
   </footer>
 
 </div>
-<script>
-function toggleMenu() {
-  var links = document.getElementById('nav-links');
-  var burger = document.getElementById('hamburger');
-  if (links) links.classList.toggle('open');
-  if (burger) burger.classList.toggle('open');
-}
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('nav')) {
-    var links = document.getElementById('nav-links');
-    var burger = document.getElementById('hamburger');
-    if (links) links.classList.remove('open');
-    if (burger) burger.classList.remove('open');
-  }
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>

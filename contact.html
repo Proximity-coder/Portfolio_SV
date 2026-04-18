@@ -5,13 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Get in touch with Sofia Vicinanza — Event & Marketing Specialist based in Barcelona, open to opportunities across Europe.">
 <title>Contact — Sofia Vicinanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="aurora"></div>
+<div class="stars"></div>
+<div class="noise"></div>
+
 <div class="site">
 
   <nav>
-    <a href="index.html" class="nav-logo">Sofia Vicinanza</a>
+    <a href="index.html" class="nav-logo">Sofia<i>.</i>Vicinanza</a>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -21,17 +29,10 @@
     <button class="nav-hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </nav>
 
-  <div class="page-hero" style="display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 64px; padding: 80px 48px;">
-    <div>
-      <div class="hero-tag">Contact</div>
-      <h1>Let's work together</h1>
-      <p>Whether you're looking for an event manager, a marketing specialist, or someone to handle both — I'd love to hear about your project.</p>
-    </div>
-    <div style="flex-shrink: 0;">
-      <div style="width: 220px; height: 220px; border-radius: 50%; overflow: hidden; border: 3px solid #28a99e;">
-        <img src="img-portrait.jpg" alt="Sofia Vicinanza" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
-      </div>
-    </div>
+  <div class="page-hero">
+    <div class="hero-tag">Contact</div>
+    <h1>Let's <em>work together.</em></h1>
+    <p class="lead">Whether you're looking for an event manager, a marketing specialist, or someone to handle both — I'd love to hear about your project.</p>
   </div>
 
   <section class="section">
@@ -39,14 +40,16 @@
       <div class="availability-dot"></div>
       Available for new projects
     </div>
+
     <div class="contact-grid">
       <div>
-        <div class="section-label" style="margin-bottom: 24px;">Send a message</div>
+        <div class="section-label">Send a message</div>
         <form class="contact-form" id="contact-form">
           <input type="hidden" name="access_key" value="bf0e2def-1714-49a9-a14f-487b66ba714d">
           <input type="hidden" name="subject" value="New message from sofiavicinanza.com">
           <input type="hidden" name="from_name" value="Sofia Vicinanza Portfolio">
           <input type="checkbox" name="botcheck" style="display:none">
+
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -61,15 +64,18 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
           </div>
-          <button type="submit" id="submit-btn" class="btn-primary-light" style="align-self: flex-start;">Send Message</button>
-          <div id="form-success" style="display:none; font-size: 13px; color: var(--accent); padding: 12px; background: var(--accent-light); border-radius: 8px;">Thank you! I'll get back to you as soon as possible.</div>
-          <div id="form-error" style="display:none; font-size: 13px; color: #A32D2D; padding: 12px; background: #FCEBEB; border-radius: 8px;">Something went wrong. Please try again or email me directly.</div>
+
+          <button type="submit" id="submit-btn" class="btn-primary" style="align-self:flex-start">Send Message →</button>
+
+          <div id="form-success" class="form-feedback success" style="display:none">Thank you! I'll get back to you as soon as possible.</div>
+          <div id="form-error" class="form-feedback error" style="display:none">Something went wrong. Please try again or email me directly.</div>
         </form>
       </div>
+
       <div>
-        <div class="section-label" style="margin-bottom: 24px;">Get in touch directly</div>
+        <div class="section-label">Get in touch directly</div>
         <div class="contact-info">
           <div class="contact-item">
             <div class="contact-item-label">Email</div>
@@ -87,14 +93,15 @@
             <div class="contact-item-label">Open to</div>
             <div class="contact-item-value">Remote · In-person · Europe-wide</div>
           </div>
-          <div style="margin-top: 8px; padding: 20px; background: var(--off-white); border-radius: 12px; border: 0.5px solid var(--border);">
-            <div style="font-size: 12px; font-weight: 500; color: var(--text-secondary); margin-bottom: 8px;">What I can help with</div>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 6px;">
-              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Full event management & coordination</li>
-              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Event marketing & branding</li>
-              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Tour & travel event management</li>
-              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Membership & community management</li>
-              <li style="font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; display: inline-block;"></span>Vendor & logistics coordination</li>
+
+          <div class="help-card">
+            <div class="help-card-label">What I can help with</div>
+            <ul class="help-list">
+              <li>Full event management &amp; coordination</li>
+              <li>Event marketing &amp; branding</li>
+              <li>Tour &amp; travel event management</li>
+              <li>Membership &amp; community management</li>
+              <li>Vendor &amp; logistics coordination</li>
             </ul>
           </div>
         </div>
@@ -103,57 +110,16 @@
   </section>
 
   <footer>
-    <div class="footer-name">© 2025 Sofia Vicinanza · Barcelona, Spain</div>
+    <div class="footer-name">© 2026 Sofia Vicinanza · Barcelona, Spain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:info@sofiavicinanza.com">info@sofiavicinanza.com</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="cookies.html">Cookie Policy</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookies.html">Cookies</a>
     </div>
   </footer>
 
 </div>
-<script>
-function toggleMenu() {
-  var links = document.getElementById("nav-links");
-  var burger = document.getElementById("hamburger");
-  if (links) links.classList.toggle("open");
-  if (burger) burger.classList.toggle("open");
-}
-document.addEventListener("click", function(e) {
-  if (!e.target.closest("nav")) {
-    document.getElementById("nav-links").classList.remove("open");
-    document.getElementById("hamburger").classList.remove("open");
-  }
-});
-document.getElementById('contact-form').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const btn = document.getElementById('submit-btn');
-  const success = document.getElementById('form-success');
-  const error = document.getElementById('form-error');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  success.style.display = 'none';
-  error.style.display = 'none';
-  try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(Object.fromEntries(new FormData(this)))
-    });
-    const data = await res.json();
-    if (data.success) {
-      success.style.display = 'block';
-      this.reset();
-    } else {
-      error.style.display = 'block';
-    }
-  } catch(err) {
-    error.style.display = 'block';
-  }
-  btn.textContent = 'Send Message';
-  btn.disabled = false;
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>

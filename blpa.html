@@ -3,15 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="BLPA Worldwide Hockey Tours — Sofia Vicinanza manages international hockey tour events for the Beer League Players Association across Europe and South America.">
+<meta name="description" content="BLPA Worldwide Hockey Tours — Sofia Vicinanza manages international hockey tour events for the Beer League Players Association across Europe and Asia.">
 <title>BLPA Worldwide Hockey Tours — Sofia Vicinanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="aurora"></div>
+<div class="stars"></div>
+<div class="noise"></div>
+
 <div class="site">
 
   <nav>
-    <a href="index.html" class="nav-logo">Sofia Vicinanza</a>
+    <a href="index.html" class="nav-logo">Sofia<i>.</i>Vicinanza</a>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -21,39 +29,45 @@
     <button class="nav-hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </nav>
 
-  <div class="page-hero" style="position: relative; overflow: hidden;">
-    <div style="position: absolute; inset: 0; z-index: 0;">
-      <img src="img-hockey.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.22;">
-    </div>
-    <div style="position: relative; z-index: 1;">
-      <a href="work.html" class="back">← Back to Work</a>
-      <div class="hero-tag">Sports & Travel · Freelance · Ongoing</div>
-      <h1>Hockey on every continent.<br><em>Almost.</em></h1>
-      <p>The Beer League Players Association (BLPA) is an international community of adult recreational hockey players. In 2026 I was brought on as a Freelance Consultant for Sport Events & Marketing to manage their Worldwide Hockey Tours — an ongoing series of approximately 12 tours per year across destinations in Europe and Asia.</p>
-      <div class="meta-row">
-        <div class="meta-item"><div class="meta-label-sm">Role</div><div class="meta-value">Freelance Consultant — Sport Events & Marketing</div></div>
-        <div class="meta-item"><div class="meta-label-sm">Client</div><div class="meta-value">Beer League Players Association</div></div>
-        <div class="meta-item"><div class="meta-label-sm">Since</div><div class="meta-value">2026 — ongoing</div></div>
-        <div class="meta-item"><div class="meta-label-sm">Scale</div><div class="meta-value">~12 tours / year</div></div>
-      </div>
+  <div class="page-hero">
+    <a href="work.html" class="back">← Back to Work</a>
+    <div class="hero-tag">Sports &amp; Travel · Freelance · Ongoing</div>
+    <h1>Hockey on every continent.<br><em>Almost.</em></h1>
+    <p class="lead">The Beer League Players Association (BLPA) is an international community of adult recreational hockey players. In 2026 I was brought on as a Freelance Consultant for Sport Events &amp; Marketing to manage their Worldwide Hockey Tours — an ongoing series of approximately 12 tours per year across destinations in Europe and Asia.</p>
+
+    <div class="meta-row">
+      <div class="meta-item"><div class="meta-label-sm">Role</div><div class="meta-value">Freelance Consultant — Sport Events &amp; Marketing</div></div>
+      <div class="meta-item"><div class="meta-label-sm">Client</div><div class="meta-value">Beer League Players Association</div></div>
+      <div class="meta-item"><div class="meta-label-sm">Since</div><div class="meta-value">2026 — ongoing</div></div>
+      <div class="meta-item"><div class="meta-label-sm">Scale</div><div class="meta-value">~12 tours / year</div></div>
     </div>
   </div>
 
   <div class="stats-bar">
-    <div class="stat-item"><div class="stat-num">12<span>+</span></div><div class="stat-label">Hockey tours per year</div></div>
-    <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Continents covered</div></div>
-    <div class="stat-item"><div class="stat-num">7<span>+</span></div><div class="stat-label">Active tour destinations</div></div>
+    <div class="stat">
+      <div class="stat-num">12<span>+</span></div>
+      <div class="stat-label">Hockey tours per year</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">2</div>
+      <div class="stat-label">Continents covered</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">7<span>+</span></div>
+      <div class="stat-label">Active tour destinations</div>
+    </div>
   </div>
 
   <section class="section">
     <div class="section-label">The project</div>
-    <p>The BLPA Worldwide Hockey Tours bring together recreational hockey players for multi-day trips combining competitive games against local teams with cultural and travel experiences. Each tour is a full event in its own right — requiring careful itinerary design, logistics, communications and branding.</p>
+    <h2>Tours designed, <em>not just booked.</em></h2>
+    <p class="lead">The BLPA Worldwide Hockey Tours bring together recreational hockey players for multi-day trips combining competitive games against local teams with cultural and travel experiences. Each tour is a full event in its own right — requiring careful itinerary design, logistics, communications and branding.</p>
     <p>I am responsible for the full lifecycle of this ongoing project, from initial concept and tour design through to participant communications, logistics coordination and post-tour reporting.</p>
   </section>
 
-  <section class="section" style="background: var(--off-white);">
+  <section class="section">
     <div class="section-label">What I'm working on</div>
-    <div class="resp-grid">
+    <div class="resp-grid" style="margin-top:32px">
       <ul class="resp-list">
         <li>Tour itinerary design across multiple destinations</li>
         <li>Brand identity and visual communication</li>
@@ -71,24 +85,24 @@
 
   <section class="section">
     <div class="section-label">Tour destinations</div>
-    <div class="type-pills" style="margin-top: 16px;">
+    <div class="type-pills" style="margin-top:16px">
       <span class="type-pill">Italy</span>
       <span class="type-pill">Iceland</span>
       <span class="type-pill">Switzerland</span>
       <span class="type-pill">Slovenia</span>
       <span class="type-pill">Japan</span>
       <span class="type-pill">Scotland</span>
-      <span class="type-pill" style="border-style: dashed; color: var(--text-muted);">and more coming soon</span>
+      <span class="type-pill dashed">and more coming soon</span>
     </div>
   </section>
 
-  <section class="section" style="background: var(--off-white);">
+  <section class="section">
     <div class="section-label">Skills demonstrated</div>
-    <div class="type-pills" style="margin-top: 8px;">
+    <div class="type-pills" style="margin-top:16px">
       <span class="type-pill">End-to-end tour management</span>
       <span class="type-pill">Sports tourism</span>
       <span class="type-pill">Freelance project ownership</span>
-      <span class="type-pill">Branding & web design</span>
+      <span class="type-pill">Branding &amp; web design</span>
       <span class="type-pill">International logistics</span>
       <span class="type-pill">Participant communications</span>
       <span class="type-pill">Multi-destination planning</span>
@@ -96,14 +110,14 @@
   </section>
 
   <section class="section">
-    <div class="blockquote">"Expanding from medical congresses into sports tourism taught me that the fundamentals of great event management are universal — attention to detail, clear communication and a relentless focus on the participant experience."</div>
+    <div class="blockquote">Expanding from medical congresses into sports tourism taught me that the fundamentals of great event management are universal — attention to detail, clear communication and a relentless focus on the participant experience.</div>
   </section>
 
   <div class="cta-section">
-    <h2>Interested in working together?</h2>
+    <h2>Interested in <em>working together?</em></h2>
     <p>I'm available for event and tour management projects across Europe and beyond.</p>
     <div class="cta-btns">
-      <a href="contact.html" class="btn-primary">Get In Touch</a>
+      <a href="contact.html" class="btn-primary">Get In Touch →</a>
       <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener" class="btn-outline">View LinkedIn</a>
     </div>
   </div>
@@ -120,31 +134,16 @@
   </div>
 
   <footer>
-    <div class="footer-name">© 2025 Sofia Vicinanza · Barcelona, Spain</div>
+    <div class="footer-name">© 2026 Sofia Vicinanza · Barcelona, Spain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/sofia-vicinanza-438909208" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:info@sofiavicinanza.com">info@sofiavicinanza.com</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="cookies.html">Cookie Policy</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookies.html">Cookies</a>
     </div>
   </footer>
 
 </div>
-<script>
-function toggleMenu() {
-  var links = document.getElementById('nav-links');
-  var burger = document.getElementById('hamburger');
-  if (links) links.classList.toggle('open');
-  if (burger) burger.classList.toggle('open');
-}
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('nav')) {
-    var links = document.getElementById('nav-links');
-    var burger = document.getElementById('hamburger');
-    if (links) links.classList.remove('open');
-    if (burger) burger.classList.remove('open');
-  }
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
