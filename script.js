@@ -14,36 +14,72 @@
   document.body.appendChild(outline);
   document.body.appendChild(cursor);
 
-  var mx = -100, my = -100, ox = -100, oy = -100;
+  /* Target (real mouse position) and follow (lagged outline position) */
+  var tx = -100, ty = -100;  // target
+  var fx = -100, fy = -100;  // follow
+  var dotX = -100, dotY = -100;
+  var running = false;
+  var hovering = false;
 
   document.addEventListener('mousemove', function(e){
-    mx = e.clientX;
-    my = e.clientY;
-    cursor.style.transform = 'translate(' + (mx - 4) + 'px,' + (my - 4) + 'px)';
+    tx = e.clientX;
+    ty = e.clientY;
+    dotX = tx;
+    dotY = ty;
+    if (!running) {
+      running = true;
+      requestAnimationFrame(tick);
+    }
+  }, { passive: true });
+
+  function tick(){
+    /* Dot: snaps to mouse each frame, via translate3d to stay on GPU */
+    cursor.style.transform = 'translate3d(' + (dotX - 4) + 'px,' + (dotY - 4) + 'px,0)';
+
+    /* Outline: lerps towards target, also translate3d */
+    fx += (tx - fx) * 0.18;
+    fy += (ty - fy) * 0.18;
+
+    /* Sub-pixel snapping: once close enough, stop the loop until next mousemove.
+       This saves battery and stops Chrome from running a pointless render loop. */
+    var dx = tx - fx, dy = ty - fy;
+    var near = dx*dx + dy*dy < 0.1;
+
+    /* Feed position into CSS custom props so the hover scale can compose with translate */
+    if (hovering) {
+      outline.style.setProperty('--ox', (fx - 17) + 'px');
+      outline.style.setProperty('--oy', (fy - 17) + 'px');
+    } else {
+      outline.style.transform = 'translate3d(' + (fx - 17) + 'px,' + (fy - 17) + 'px,0) scale(1)';
+    }
+
+    if (near) {
+      running = false;
+    } else {
+      requestAnimationFrame(tick);
+    }
+  }
+
+  /* Hover handling — class-based so the CSS transition takes over */
+  function onEnter(){
+    hovering = true;
+    outline.style.setProperty('--ox', (fx - 17) + 'px');
+    outline.style.setProperty('--oy', (fy - 17) + 'px');
+    outline.classList.add('is-hover');
+  }
+  function onLeave(){
+    hovering = false;
+    outline.classList.remove('is-hover');
+    /* Resume the tick loop so the outline snaps back to following the cursor */
+    if (!running) {
+      running = true;
+      requestAnimationFrame(tick);
+    }
+  }
+  document.querySelectorAll('a, button, input, textarea, .card').forEach(function(el){
+    el.addEventListener('mouseenter', onEnter);
+    el.addEventListener('mouseleave', onLeave);
   });
-
-  function follow(){
-    ox += (mx - ox) * 0.18;
-    oy += (my - oy) * 0.18;
-    outline.style.transform = 'translate(' + (ox - 17) + 'px,' + (oy - 17) + 'px)';
-    requestAnimationFrame(follow);
-  }
-  follow();
-
-  /* Grow on interactive elements */
-  function bindHover(el){
-    el.addEventListener('mouseenter', function(){
-      outline.style.width = '56px';
-      outline.style.height = '56px';
-      outline.style.borderColor = 'var(--g3)';
-    });
-    el.addEventListener('mouseleave', function(){
-      outline.style.width = '34px';
-      outline.style.height = '34px';
-      outline.style.borderColor = 'var(--g2)';
-    });
-  }
-  document.querySelectorAll('a, button, input, textarea, .card').forEach(bindHover);
 
   /* Hide cursor when leaving window */
   document.addEventListener('mouseleave', function(){
