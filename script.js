@@ -1,40 +1,6 @@
 /* Sofia Vicinanza — Nocturne */
 
 /* ======================
-   Scroll reveal
-   ====================== */
-(function initReveal(){
-  var reveals = document.querySelectorAll('.reveal');
-  if (!reveals.length) return;
-
-  /* Fallback: show everything if IntersectionObserver not supported */
-  if (!('IntersectionObserver' in window)){
-    reveals.forEach(function(r){ r.classList.add('in', 'done'); });
-    return;
-  }
-
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if (entry.isIntersecting){
-        var el = entry.target;
-        el.classList.add('in');
-        io.unobserve(el);
-
-        /* After transition completes, release GPU layer */
-        el.addEventListener('transitionend', function handler(e){
-          if (e.propertyName === 'transform'){
-            el.classList.add('done');
-            el.removeEventListener('transitionend', handler);
-          }
-        });
-      }
-    });
-  }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
-
-  reveals.forEach(function(r){ io.observe(r); });
-})();
-
-/* ======================
    Mobile menu toggle
    ====================== */
 function toggleMenu() {
