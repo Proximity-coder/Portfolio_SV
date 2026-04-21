@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
-    <linearGradient id="molten" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Molten gradient, left-to-right. Weighted so the warm half dominates visually
+         on short words — the indigo gets a grace-note presence on the leading edge,
+         tangerine takes over quickly, gold finishes strong. -->
+    <linearGradient id="molten" x1="0%" y1="50%" x2="100%" y2="50%">
       <stop offset="0%" stop-color="#1E2A78"/>
-      <stop offset="50%" stop-color="#FF6B35"/>
+      <stop offset="25%" stop-color="#FF6B35"/>
+      <stop offset="75%" stop-color="#F5C842"/>
       <stop offset="100%" stop-color="#F5C842"/>
     </linearGradient>
     <radialGradient id="glowMain" cx="80%" cy="20%" r="55%">
@@ -29,7 +33,7 @@
           font-size="12"
           letter-spacing="2.2"
           font-weight="500"
-          fill="rgba(240,242,245,0.78)">FREELANCE CONSULTANT · BARCELONA</text>
+          fill="rgba(240,242,245,0.78)">EVENT CONSULTANT · BARCELONA</text>
   </g>
 
   <text x="80" y="246"
@@ -43,13 +47,7 @@
         font-weight="500"
         font-size="76"
         letter-spacing="-3"
-        fill="url(#molten)">events</text>
-  <text x="352" y="336"
-        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
-        font-weight="500"
-        font-size="76"
-        letter-spacing="-3"
-        fill="#F0F2F5"> into seamless</text>
+        fill="#F0F2F5"><tspan fill="url(#molten)">events</tspan> into seamless</text>
   <text x="80" y="426"
         font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
         font-weight="500"

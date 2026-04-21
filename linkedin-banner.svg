@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+  <defs>
+    <!-- Molten gradient, left-to-right, warm-weighted stops. See og-image.svg. -->
+    <linearGradient id="molten" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#1E2A78"/>
+      <stop offset="35%" stop-color="#FF6B35"/>
+      <stop offset="80%" stop-color="#F5C842"/>
+      <stop offset="100%" stop-color="#F5C842"/>
+    </linearGradient>
+
+    <!-- Same 5-point horizontal aurora as the OG image, remapped for 1584x396 ratio.
+         The key difference: on LinkedIn the lower-left is covered by the profile picture,
+         so we keep the glows positioned above/right of that safe zone. -->
+    <radialGradient id="glow1" cx="10%" cy="25%" r="32%">
+      <stop offset="0%" stop-color="#1E2A78" stop-opacity="0.48"/>
+      <stop offset="70%" stop-color="#1E2A78" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="38%" cy="60%" r="26%">
+      <stop offset="0%" stop-color="#1E2A78" stop-opacity="0.32"/>
+      <stop offset="70%" stop-color="#1E2A78" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="60%" cy="25%" r="28%">
+      <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.36"/>
+      <stop offset="70%" stop-color="#FF6B35" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow4" cx="82%" cy="70%" r="32%">
+      <stop offset="0%" stop-color="#F5C842" stop-opacity="0.32"/>
+      <stop offset="70%" stop-color="#F5C842" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow5" cx="96%" cy="20%" r="24%">
+      <stop offset="0%" stop-color="#F5C842" stop-opacity="0.22"/>
+      <stop offset="70%" stop-color="#F5C842" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="50%" stop-color="#06080E" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#06080E" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1584" height="396" fill="#06080E"/>
+  <rect width="1584" height="396" fill="url(#glow1)"/>
+  <rect width="1584" height="396" fill="url(#glow2)"/>
+  <rect width="1584" height="396" fill="url(#glow3)"/>
+  <rect width="1584" height="396" fill="url(#glow4)"/>
+  <rect width="1584" height="396" fill="url(#glow5)"/>
+  <rect width="1584" height="396" fill="url(#vignette)"/>
+
+  <rect x="0" y="0" width="1584" height="1" fill="#F5C842" opacity="0.4"/>
+
+  <!-- Eyebrow pill, top-right -->
+  <g transform="translate(1084, 62)">
+    <rect width="420" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+    <circle cx="23" cy="18" r="4" fill="#5EE6A1"/>
+    <text x="41" y="23"
+          font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+          font-size="12"
+          letter-spacing="2.2"
+          font-weight="500"
+          fill="rgba(240,242,245,0.78)">FREELANCE CONSULTANT · BARCELONA</text>
+  </g>
+
+  <!-- Main tagline, shifted right to avoid the profile-pic zone in lower-left -->
+  <text x="540" y="200"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-weight="500"
+        font-size="64"
+        letter-spacing="-2.5"
+        fill="#F0F2F5">Shaping <tspan fill="url(#molten)">concepts</tspan></text>
+  <text x="540" y="280"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-weight="500"
+        font-size="64"
+        letter-spacing="-2.5"
+        fill="#F0F2F5">into experiences.</text>
+
+  <!-- Signature below tagline -->
+  <line x1="540" y1="335" x2="580" y2="335" stroke="#F5C842" stroke-width="1.5" opacity="0.85"/>
+  <text x="540" y="362"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-size="13"
+        letter-spacing="0.3"
+        fill="rgba(240,242,245,0.55)">Sofia Vicinanza  ·  Event &amp; Marketing Specialist  ·  sofiavicinanza.com</text>
+
+  <!-- Constellation lower-right -->
+  <g transform="translate(1250, 310)" opacity="0.55">
+    <line x1="0"   y1="40" x2="48"  y2="12"  stroke="#F5C842" stroke-width="0.6"/>
+    <line x1="48"  y1="12" x2="104" y2="34"  stroke="#F5C842" stroke-width="0.6"/>
+    <line x1="104" y1="34" x2="160" y2="8"   stroke="#F5C842" stroke-width="0.6"/>
+    <line x1="160" y1="8"  x2="210" y2="28"  stroke="#F5C842" stroke-width="0.6"/>
+    <line x1="210" y1="28" x2="258" y2="14"  stroke="#F5C842" stroke-width="0.6"/>
+    <circle cx="0"   cy="40" r="2.2" fill="#F5C842"/>
+    <circle cx="48"  cy="12" r="2.2" fill="#F5C842"/>
+    <circle cx="104" cy="34" r="2.2" fill="#F5C842"/>
+    <circle cx="160" cy="8"  r="2.2" fill="#F5C842"/>
+    <circle cx="210" cy="28" r="2.2" fill="#F5C842"/>
+    <circle cx="258" cy="14" r="2.2" fill="#F5C842"/>
+  </g>
+</svg>
