@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="molten" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2A78"/>
+      <stop offset="50%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#F5C842"/>
+    </linearGradient>
+    <radialGradient id="glowMain" cx="80%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#1E2A78" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#1E2A78" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowWarm" cx="85%" cy="90%" r="40%">
+      <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.14"/>
+      <stop offset="70%" stop-color="#FF6B35" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#06080E"/>
+  <rect width="1200" height="630" fill="url(#glowMain)"/>
+  <rect width="1200" height="630" fill="url(#glowWarm)"/>
+
+  <rect x="0" y="0" width="1200" height="1" fill="#F5C842" opacity="0.4"/>
+
+  <g transform="translate(80, 88)">
+    <rect width="420" height="38" rx="19" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+    <circle cx="24" cy="19" r="4" fill="#5EE6A1"/>
+    <text x="42" y="24"
+          font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+          font-size="12"
+          letter-spacing="2.2"
+          font-weight="500"
+          fill="rgba(240,242,245,0.78)">FREELANCE CONSULTANT · BARCELONA</text>
+  </g>
+
+  <text x="80" y="246"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-weight="500"
+        font-size="76"
+        letter-spacing="-3"
+        fill="#F0F2F5">Turning complex</text>
+  <text x="80" y="336"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-weight="500"
+        font-size="76"
+        letter-spacing="-3"
+        fill="url(#molten)">events</text>
+  <text x="352" y="336"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-weight="500"
+        font-size="76"
+        letter-spacing="-3"
+        fill="#F0F2F5"> into seamless</text>
+  <text x="80" y="426"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-weight="500"
+        font-size="76"
+        letter-spacing="-3"
+        fill="#F0F2F5">experiences.</text>
+
+  <line x1="80" y1="520" x2="120" y2="520" stroke="#F5C842" stroke-width="1.5" opacity="0.85"/>
+
+  <text x="80" y="560"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-weight="500"
+        font-size="22"
+        letter-spacing="-0.5"
+        fill="#F0F2F5">Sofia<tspan fill="#F5C842">.</tspan>Vicinanza</text>
+  <text x="80" y="585"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', Helvetica, sans-serif"
+        font-size="14"
+        letter-spacing="0.5"
+        fill="rgba(240,242,245,0.5)">Event &amp; Marketing Specialist · sofiavicinanza.com</text>
+
+  <g transform="translate(910, 510)" opacity="0.7">
+    <line x1="0"   y1="60" x2="55"  y2="20"  stroke="#F5C842" stroke-width="0.6"/>
+    <line x1="55"  y1="20" x2="120" y2="48"  stroke="#F5C842" stroke-width="0.6"/>
+    <line x1="120" y1="48" x2="178" y2="12"  stroke="#F5C842" stroke-width="0.6"/>
+    <line x1="178" y1="12" x2="230" y2="38"  stroke="#F5C842" stroke-width="0.6"/>
+    <circle cx="0"   cy="60" r="2.5" fill="#F5C842"/>
+    <circle cx="55"  cy="20" r="2.5" fill="#F5C842"/>
+    <circle cx="120" cy="48" r="2.5" fill="#F5C842"/>
+    <circle cx="178" cy="12" r="2.5" fill="#F5C842"/>
+    <circle cx="230" cy="38" r="2.5" fill="#F5C842"/>
+  </g>
+</svg>
